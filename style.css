@@ -10,7 +10,7 @@ body{
   width:480px;
   height:288px;
   margin-top: -240px; /*set to a negative number 1/2 of your height*/
-  margin-left: -144px; /*set to a negative number 1/2 of your width*/
+  margin-left: -200px; /*set to a negative number 1/2 of your width*/
   background-color: #f3f3f3;
   padding:10px;
   opacity:0.85;
