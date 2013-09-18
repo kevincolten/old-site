@@ -15,7 +15,8 @@ $(function(){
 
   $('#jquery').on("click", function(event){
     event.preventDefault();
-    $('#container').removeClass('invisible').html($('#jqueryTemplate').html());
+    $.getScript('snakeUI.js');
+    // $('#container').removeClass('invisible').html($('#jqueryTemplate').html());
   });
 
   $('#rails').on("click", function(event){
