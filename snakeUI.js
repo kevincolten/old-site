@@ -15,7 +15,7 @@ var Snake = (function(lib){
  					$('#container').append($div);
  				}
  			}
- 			$('#container').append('<div id="message"></div>')
+ 			$('#container').prepend('#jqueryTemplate')
 		}
 
 		UI.prototype.clearBoard = function () {
