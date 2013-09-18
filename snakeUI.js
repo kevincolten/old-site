@@ -6,15 +6,16 @@ var Snake = (function(lib){
 		}
 
 		UI.prototype.blankBoard = function () {
+			$('#container').html("")
 			for(var i = 0; i < 29; i++){
 				for (var j = 0; j < 29; j++){
 					var $div = $('<div></div>').addClass("row" + i)
 																		 .addClass("col" + j)
 																		 .addClass("square")
- 					$('body').append($div);
+ 					$('#container').append($div);
  				}
  			}
- 			$('body').append('<div id="message"></div>')
+ 			$('#container').append('<div id="message"></div>')
 		}
 
 		UI.prototype.clearBoard = function () {
