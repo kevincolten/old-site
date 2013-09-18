@@ -15,11 +15,12 @@ $(function(){
 
   $('#jquery').on("click", function(event){
     event.preventDefault();
+    $('#container').removeClass('invisible');
     $.getScript('snakeUI.js', function(){
       console.log("snakeUI")
     });
     $.getScript('snake.js', function(){
-      console.log("snakeUI")
+      console.log("snake")
     });
     // $('#container').removeClass('invisible').html($('#jqueryTemplate').html());
   });
