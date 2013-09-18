@@ -10,7 +10,7 @@ var Snake = (function(lib){
 				for (var j = 0; j < 29; j++){
 					var $div = $('<div></div>').addClass("row" + i)
 																		 .addClass("col" + j)
-																		 .addClass("square")
+																		 .addClass("square");
  					$('#container').append($div);
  				}
  			}
