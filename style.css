@@ -7,10 +7,10 @@ body{
   position:absolute;
   top: 50%;
   left: 50%;
-  width:480px;
-  height:288px;
-  margin-top: -240px; /*set to a negative number 1/2 of your height*/
-  margin-left: -200px; /*set to a negative number 1/2 of your width*/
+  width:500px;
+  height:500px;
+  margin-top: -250px; /*set to a negative number 1/2 of your height*/
+  margin-left: -250px; /*set to a negative number 1/2 of your width*/
   background-color: #f3f3f3;
   padding:10px;
   opacity:0.85;
@@ -23,7 +23,7 @@ body{
 
 .square{
   height: 10px;
-  width: 10px;
+  width: 15px;
   background-color: yellow;
   float: left;
   font-size: 40px;
