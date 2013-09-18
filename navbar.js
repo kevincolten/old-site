@@ -1,20 +1,24 @@
 $(function(){
   $('#logo').on("click", function(){
+    $.getScript('showShip.js');
     $('#container').addClass('invisible')
   });
 
   $('#aboutme').on("click", function(event){
     event.preventDefault();
+    $.getScript('showShip.js');
     $('#container').removeClass('invisible').html($('#aboutmeTemplate').html());
   });
 
   $('#canvas').on("click", function(event){
     event.preventDefault();
+    $.getScript('showShip.js');
     $('#container').removeClass('invisible').html($('#canvasTemplate').html());
   });
 
   $('#jquery').on("click", function(event){
     event.preventDefault();
+    $.getScript('hideShip.js');
     $('#container').removeClass('invisible');
     $.getScript('snakeUI.js', function(){
       console.log("snakeUI")
@@ -22,16 +26,17 @@ $(function(){
     $.getScript('snake.js', function(){
       console.log("snake")
     });
-    // $('#container').removeClass('invisible').html($('#jqueryTemplate').html());
   });
 
   $('#rails').on("click", function(event){
     event.preventDefault();
+    $.getScript('showShip.js');
     $('#container').removeClass('invisible').html($('#railsTemplate').html());
   });
 
   $('#backbone').on("click", function(event){
     event.preventDefault();
+    $.getScript('showShip.js');
     $('#container').removeClass('invisible').html($('#backboneTemplate').html());
   });
 });

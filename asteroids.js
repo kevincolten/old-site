@@ -1,4 +1,4 @@
- $(function(){
+  $(function(){
       var canvasEl = document.createElement('canvas');
       canvasEl.id = 'canvas'
       canvasEl.width = window.innerWidth;
