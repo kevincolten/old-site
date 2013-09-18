@@ -6,15 +6,13 @@ var Snake = (function(lib){
 		}
 
 		UI.prototype.blankBoard = function () {
-			$('#container').prepend($('#jqueryTemplate').html())
 			for(var i = 0; i < 29; i++){
 				for (var j = 0; j < 29; j++){
 					var $div = $('<div></div>').addClass("row" + i)
 																		 .addClass("col" + j)
 																		 .addClass("square")
- 					$('#container').html($div);
+ 					$('#container').append($div);
  				}
- 				$('#container').append('</center>')
  			}
 		}
 

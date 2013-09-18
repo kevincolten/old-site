@@ -19,13 +19,10 @@ $(function(){
   $('#jquery').on("click", function(event){
     event.preventDefault();
     $.getScript('hideShip.js');
+    $('#container').html($('#jqueryTemplate').html());
     $('#container').removeClass('invisible');
-    $.getScript('snakeUI.js', function(){
-      console.log("snakeUI")
-    });
-    $.getScript('snake.js', function(){
-      console.log("snake")
-    });
+    $.getScript('snakeUI.js');
+    $.getScript('snake.js');
   });
 
   $('#rails').on("click", function(event){
