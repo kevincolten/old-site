@@ -36,4 +36,10 @@ $(function(){
     $.getScript('showShip.js');
     $('#container').removeClass('invisible').html($('#backboneTemplate').html());
   });
+
+  $('#links').on("click", function(event){
+    event.preventDefault();
+    $.getScript('showShip.js');
+    $('#container').removeClass('invisible').html($('#linksTemplate').html());
+  });
 });
