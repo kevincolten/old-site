@@ -22,7 +22,6 @@ $(function(){
     $('#container').html($('#jqueryTemplate').html());
     $('#container').removeClass('invisible');
     $.getScript('snakeUI.js');
-    $.getScript('snake.js');
   });
 
   $('#rails').on("click", function(event){
