@@ -6,7 +6,7 @@ var Snake = (function(lib){
 
 	var Game = lib.Game = function(){
 		this.snakeBody = [[0,0,1], [0,1,1], [0,2,1]];
-		this.foodLoc = [getRandomInt(0,29), getRandomInt(0,29)];
+		this.foodLoc = [getRandomInt(0,28), getRandomInt(0,28)];
 	}
 
 	Game.prototype.move = function (dir) {
